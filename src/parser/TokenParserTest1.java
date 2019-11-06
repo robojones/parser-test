@@ -11,15 +11,15 @@ import parser.TokenParser;
 
 class TokenParserTest1 {
 
-	@Test
-	void test() {
-		List<String> input = Arrays.asList("foo", ":=", ":=", "23", "write", "foo", "$$");
-		
-		Node result = TokenParser.functionParser(input);
-		
-		assertEquals(result.getChildren().size(), 0);
-		assertEquals(result.getLabel(), "Illegal");
+    @Test
+    void test() {
+        List<String> input = Arrays.asList("foo", ":=", ":=", "23", "write", "foo", "$$");
 
-	}
+        Node result = TokenParser.functionParser(input);
+
+        assertEquals(result.getChildren().size(), 0);
+        assertEquals(result.getLabel(), "Illegal");
+
+    }
 
 }

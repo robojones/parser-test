@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package parser;
 
@@ -11,43 +11,43 @@ import java.util.List;
  * Class represents each element of the tree
  */
 public class Node {
-	private List<Node> children = null;
-	private Node parent = null;
-	private String label = "";
-	private int id;
-	
-	public Node(int id) {
-		this.id = id;
-		this.children = new ArrayList<Node>(); 
-	}
-	
-	public int getId() {
-		return id;
-	}
+    private List<Node> children = null;
+    private Node parent = null;
+    private String label = "";
+    private int id;
 
-	public String getLabel() {
-		return label;
-	}
+    public Node(int id) {
+        this.id = id;
+        this.children = new ArrayList<Node>();
+    }
 
-	public void setLabel(String label) {
-		this.label = label;
-	}
+    public int getId() {
+        return id;
+    }
 
-	public Node getParent() {
-		return parent;
-	}
+    public String getLabel() {
+        return label;
+    }
 
-	public void setParent(Node parent) {
-		this.parent = parent;
-	}
+    public void setLabel(String label) {
+        this.label = label;
+    }
 
-	public List<Node> getChildren() {
-		return children;
-	}
+    public Node getParent() {
+        return parent;
+    }
 
-	public void addChildren(Node child) {
-		if (child != null) {
-			this.children.add(child);
-		}
-	}
+    public void setParent(Node parent) {
+        this.parent = parent;
+    }
+
+    public List<Node> getChildren() {
+        return children;
+    }
+
+    public void addChildren(Node child) {
+        if (child != null) {
+            this.children.add(child);
+        }
+    }
 }
