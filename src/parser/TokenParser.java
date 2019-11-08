@@ -62,6 +62,7 @@ public class TokenParser {
             case WRITE:
                 return token.equals("write");
             case LITERAL:
+                // LITERAL must be a sequence of digits
                 return token.matches("\\d+");
             case ID:
                 // ID must me anything but the other tokens.
