@@ -16,7 +16,7 @@ The purpose of this project was to learn, how a recursive descend parser works.
 |---------|
 | start → stmt_list `$$`
 | stmt_list → stmt stmt_list \| `ϵ`
-| stmt → `id` := expr \| read `id` \| write expr
+| stmt → `id` := expr \| `read` `id` \| `write` expr
 | expr → term term_tail
 | term_tail → add_op term term_tail \| `ϵ`
 | term → factor factor_tail
